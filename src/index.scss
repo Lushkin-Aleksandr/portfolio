@@ -8,21 +8,38 @@
   --primary-color: #ffb400;
   --bg-color: #ffffff;
   --btn-color: #2b2a2a;
+  --nav-bg-color: #ffffff;
   --nav-btn-color: #eeeeee;
   --nav-icon-color: #666666;
+  --nav-box-shadow: 0 0 47px #dedede;
   --text-color: #666666;
+  --photo-box-shadow: none;
+  --theme-transition: .3s ease;
 }
 
 body.theme-dark {
   --text-color: #ffffff;
   --bg-color: #111111;
+  --nav-bg-color: #2b2a2a;
   --nav-btn-color: #2b2a2a;
   --nav-icon-color: #dddddd;
+  --nav-box-shadow: none;
+  --photo-box-shadow: 0 0 7px rgba(0,0,0,.9);
+
+  @media (max-width: 990px) {
+    --nav-btn-color: #444444;
+  }
+}
+
+html,
+body,
+#root {
+  height: 100%;
 }
 
 body {
   background-color: var(--bg-color);
   font-family: Poppins,sans-serif;
   color: var(--text-color);
-  transition: ease .5s;
+  transition: color var(--theme-transition), background-color var(--theme-transition);
 }
