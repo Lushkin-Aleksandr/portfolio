@@ -17,9 +17,9 @@ export const ThemeSwitcher: FC<PropsType> = () => {
   return (
     <div className={s.themeSwitcher} onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
       {theme === 'light' ? (
-        <FontAwesomeIcon icon={faLightbulb} />
-      ) : (
         <FontAwesomeIcon icon={faMoon} />
+      ) : (
+        <FontAwesomeIcon icon={faLightbulb} />
       )}
     </div>
   )
