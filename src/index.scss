@@ -1,0 +1,15 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #ffffff;
+  --text-color: #000000;
+}
+
+body.theme-dark {
+  --primary-color: #000000;
+  --text-color: #ffffff;
+}
