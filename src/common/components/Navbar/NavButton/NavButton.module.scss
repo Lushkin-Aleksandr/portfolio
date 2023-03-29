@@ -45,4 +45,8 @@
   transition: ease .3s;
   text-transform: uppercase;
   z-index: -1;
+
+  @media (max-width: 990px) {
+    display: none;
+  }
 }

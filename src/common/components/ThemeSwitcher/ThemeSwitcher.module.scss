@@ -13,4 +13,8 @@
   font-size: 30px;
   color: #ffffff;
   z-index: 99;
+
+  @media (max-width: 990px) {
+    right: 15px;
+  }
 }

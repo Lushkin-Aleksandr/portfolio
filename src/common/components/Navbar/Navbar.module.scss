@@ -7,5 +7,20 @@
   right: 30px;
   transform: translateY(-50%);
   z-index: 10;
+
+  @media (max-width: 990px) {
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding: 8px;
+    background-color: var(--nav-bg-color);
+    box-shadow: var(--nav-box-shadow);
+    transition: var(--theme-transition);
+  }
 }
 
