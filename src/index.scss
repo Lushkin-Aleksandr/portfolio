@@ -5,11 +5,19 @@
 }
 
 :root {
-  --primary-color: #ffffff;
-  --text-color: #000000;
+  --primary-color: #ffb400;
+  --bg-color: #ffffff;
+  --btn-color: #2b2a2a;
+  --text-color: #666666;
 }
 
 body.theme-dark {
-  --primary-color: #000000;
   --text-color: #ffffff;
+  --bg-color: #111111;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: ease .5s;
 }

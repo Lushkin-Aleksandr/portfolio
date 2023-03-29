@@ -1,5 +1,8 @@
 import React, { FC, useEffect, useState } from 'react'
 import s from './ThemeSwitcher.module.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMoon } from '@fortawesome/free-regular-svg-icons/faMoon'
+import { faLightbulb } from '@fortawesome/free-regular-svg-icons'
 
 type PropsType = {}
 
@@ -13,7 +16,11 @@ export const ThemeSwitcher: FC<PropsType> = () => {
 
   return (
     <div className={s.themeSwitcher} onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
-      {theme === 'light' ? <span>Light</span> : <span>Dark</span>}
+      {theme === 'light' ? (
+        <FontAwesomeIcon icon={faLightbulb} />
+      ) : (
+        <FontAwesomeIcon icon={faMoon} />
+      )}
     </div>
   )
 }
