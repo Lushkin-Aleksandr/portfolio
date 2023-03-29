@@ -8,12 +8,16 @@
   --primary-color: #ffb400;
   --bg-color: #ffffff;
   --btn-color: #2b2a2a;
+  --nav-btn-color: #eeeeee;
+  --nav-icon-color: #666666;
   --text-color: #666666;
 }
 
 body.theme-dark {
   --text-color: #ffffff;
   --bg-color: #111111;
+  --nav-btn-color: #2b2a2a;
+  --nav-icon-color: #dddddd;
 }
 
 body {

@@ -1,0 +1,47 @@
+.navBtn {
+  width: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--nav-btn-color);
+  font-size: 19px;
+  color: var(--nav-icon-color);
+  transition: ease .3s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    .navBtnText {
+      padding-right: 50px;
+      opacity: 1;
+    }
+  }
+}
+
+.navBtn.active {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.navBtnText {
+  position: absolute;
+  padding-left: 20px;
+  padding-right: 20px;
+  top: 0;
+  right: 0;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-color);
+  border-radius: 50px;
+  opacity: 0;
+  font-size: 15px;
+  color: #ffffff;
+  transition: ease .3s;
+  text-transform: uppercase;
+  z-index: -1;
+}
