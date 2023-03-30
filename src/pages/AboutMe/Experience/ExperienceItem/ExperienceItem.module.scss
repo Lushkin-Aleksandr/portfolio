@@ -1,0 +1,73 @@
+.experienceItem {
+  border-left: var(--experience-border);
+  padding-left: 40px;
+  position: relative;
+  transition: var(--theme-transition);
+  margin-bottom: 50px;
+}
+
+.iconHolder {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-50%);
+}
+
+.date {
+  display: inline-block;
+  font-size: 12px;
+  background-color: var(--experience-date-bg);
+  padding: 1px 10px;
+  border-radius: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: var(--theme-transition);
+  opacity: .8;
+  margin-bottom: 20px;
+}
+
+.job {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.jobTitle {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.jobPlace {
+  white-space: nowrap;
+  font-size: 15px;
+  opacity: .8;
+  padding-left: 20px;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 2px;
+    width: 10px;
+    background-color: var(--text-color);
+    transition: var(--theme-transition);
+    opacity: .8;
+  }
+}
+
+.description {
+  font-size: 14px;
+}

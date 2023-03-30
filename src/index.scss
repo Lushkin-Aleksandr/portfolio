@@ -23,6 +23,8 @@ ol, ul {
   --page-title-bg-text-color: rgba(30,37,48,.07);
   --skill-bg: #ffffff;
   --skill-box-shadow: 0 0 7px #d3d3d3;
+  --experience-border: 1px solid #dddddd;
+  --experience-date-bg: #eeeeee;
 }
 
 body.theme-dark {
@@ -33,10 +35,12 @@ body.theme-dark {
   --nav-icon-color: #dddddd;
   --nav-box-shadow: none;
   --photo-box-shadow: 0 0 7px rgba(0,0,0,.9);
-  --page-title-color: #ffb400;
+  --page-title-color: var(--primary-color);
   --page-title-bg-text-color: hsla(0,0%,100%,.07);
   --skill-bg: #1c1c1c;
   --skill-box-shadow: 0 0 5px #000000;
+  --experience-border: 1px solid #333333;
+  --experience-date-bg: #252525;
 
   @media (max-width: 990px) {
     --nav-btn-color: #444444;

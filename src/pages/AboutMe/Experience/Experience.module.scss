@@ -1,0 +1,28 @@
+@import "../../../common/styles/mixins";
+
+.experience {
+  padding-bottom: 80px;
+}
+
+.title {
+  @include subtitle;
+  text-align: center;
+  margin-bottom: 50px;
+
+  @media (max-width: 576px) {
+    font-size: 21px;
+  }
+}
+
+.listHolder {
+  display: flex;
+  column-gap: 20px;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+.list {
+  padding: 0 30px;
+}
