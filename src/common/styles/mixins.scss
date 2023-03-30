@@ -1,0 +1,16 @@
+@mixin container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@mixin subtitle {
+  font-size: 26px;
+  margin-bottom: 22px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  @media (max-width: 576px) {
+    font-size: 21px;
+  }
+}
