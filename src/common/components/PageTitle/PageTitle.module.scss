@@ -1,0 +1,35 @@
+.pageTitle {
+  text-transform: uppercase;
+  position: relative;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.mainText {
+  font-size: 56px;
+  font-weight: 900;
+}
+
+.firstPart {
+  color: var(--page-title-color);
+  transition: color var(--theme-transition);
+}
+
+.secondPart {
+  color: var(--primary-color);
+}
+
+.backgroundText {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 110px;
+  font-weight: 800;
+  line-height: .7;
+  letter-spacing: 10px;
+  color: var(--page-title-bg-text-color);
+  transition: color var(--theme-transition);
+  user-select: none;
+}
