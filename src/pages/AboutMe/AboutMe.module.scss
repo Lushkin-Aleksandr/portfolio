@@ -1,0 +1,21 @@
+@import "../../common/styles/mixins";
+
+.aboutMe {}
+
+.container {
+  @include container;
+}
+
+.infoSkillsWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  padding: 0 15px 80px;
+  
+  @media (max-width: 1200px) {
+    column-gap: 10px;
+  }
+  @media (max-width: 990px) {
+    flex-direction: column;
+  }
+}
