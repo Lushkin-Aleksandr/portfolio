@@ -8,6 +8,11 @@
 .mainText {
   font-size: 56px;
   font-weight: 900;
+  line-height: 1.2;
+
+  @media (max-width: 576px) {
+    font-size: 35px;
+  }
 }
 
 .firstPart {
@@ -32,4 +37,8 @@
   color: var(--page-title-bg-text-color);
   transition: color var(--theme-transition);
   user-select: none;
+  
+  @media (max-width: 767px) {
+    font-size: 45px;
+  }
 }
