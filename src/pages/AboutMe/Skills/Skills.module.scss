@@ -1,0 +1,41 @@
+@import "../../../common/styles/mixins";
+
+.skills {
+  max-width: 550px;
+
+  @media (max-width: 1350px) {
+    margin-right: 70px;
+  }
+
+  @media (max-width: 1070px) {
+    max-width: 450px;
+  }
+
+  @media (max-width: 990px) {
+    margin: 0 auto;
+    max-width: none;
+  }
+
+  @media (max-width: 580px) {
+    max-width: none;
+  }
+}
+
+.title {
+  @include subtitle;
+
+  @media (max-width: 990px) {
+    text-align: center;
+  }
+}
+
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  row-gap: 20px;
+
+  @media (max-width: 990px) {
+    justify-content: center;
+  }
+}

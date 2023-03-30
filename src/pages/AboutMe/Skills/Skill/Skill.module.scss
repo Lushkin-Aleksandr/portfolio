@@ -1,0 +1,33 @@
+.skill {
+  //flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-bottom: 2px solid var(--primary-color);
+  box-shadow: var(--skill-box-shadow);
+  background-color: var(--skill-bg);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  transition: var(--theme-transition);
+}
+
+.logo {
+  max-width: 64px;
+  max-height: 64px;
+}
+
+.title {
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+}
