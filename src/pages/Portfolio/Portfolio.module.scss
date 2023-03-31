@@ -1,0 +1,17 @@
+@import "../../common/styles/mixins";
+
+.portfolio {
+  padding-bottom: 80px;
+}
+
+.container {
+  @include container;
+  padding: 0 15px;
+}
+
+.works {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
