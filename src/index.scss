@@ -25,6 +25,9 @@ ol, ul {
   --skill-box-shadow: 0 0 7px #d3d3d3;
   --experience-border: 1px solid #dddddd;
   --experience-date-bg: #eeeeee;
+  --form-input-bg: #fff;
+  --form-input-error-bg: #ffd8d8;
+  --form-input-border: 1px solid #dddddd;
 }
 
 body.theme-dark {
@@ -41,6 +44,9 @@ body.theme-dark {
   --skill-box-shadow: 0 0 5px #000000;
   --experience-border: 1px solid #333333;
   --experience-date-bg: #252525;
+  --form-input-bg: #252525;
+  --form-input-error-bg: #b91a1a;
+  --form-input-border: 1px solid #111111;
 
   @media (max-width: 990px) {
     --nav-btn-color: #444444;

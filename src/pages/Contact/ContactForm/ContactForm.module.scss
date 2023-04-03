@@ -1,0 +1,17 @@
+.form {
+  flex: 2;
+  padding: 0 20px;
+}
+
+.inputHolder {
+  margin-bottom: 10px;
+}
+
+.inputDivider {
+  display: flex;
+  column-gap: 30px;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}

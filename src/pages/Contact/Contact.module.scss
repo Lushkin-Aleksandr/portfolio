@@ -1,0 +1,57 @@
+@import "../../common/styles/mixins";
+
+.contact {
+  padding-bottom: 80px;
+}
+
+.container {
+  @include container;
+}
+
+.content {
+  display: flex;
+
+  @media (max-width: 990px) {
+    display: block;
+  }
+}
+
+.info {
+  padding: 0 20px;
+  flex: 1;
+  margin-bottom: 40px;
+}
+
+.infoTitle {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 10px;
+
+  @media (max-width: 576px) {
+    font-size: 21px;
+  }
+}
+
+.text {
+  margin-bottom: 20px;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+}
+
+.iconHolder {
+  margin-right: 10px;
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+.contactName {
+  text-transform: uppercase;
+}
+
+
+
+
