@@ -14,3 +14,24 @@
     font-size: 21px;
   }
 }
+
+@mixin input {
+  background-color: var(--form-input-bg);
+  border: var(--form-input-border);
+  border-radius: 30px;
+  width: 100%;
+  padding: 11px 26px;
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--text-color);
+  transition: var(--theme-transition);
+  outline: none;
+
+  &:focus {
+    border: 1px solid var(--primary-color);
+  }
+
+  &::placeholder {
+    text-transform: uppercase;
+  }
+}
