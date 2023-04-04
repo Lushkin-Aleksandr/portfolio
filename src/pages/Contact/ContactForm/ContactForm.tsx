@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import s from './ContactForm.module.scss'
 import { Input } from '../../../common/components/Input/Input'
 import { Textarea } from '../../../common/components/Textarea/Textarea'
@@ -6,6 +6,8 @@ import { Button } from '../../../common/components/Button/Button'
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons/faPaperPlane'
 import { useFormik } from 'formik'
 import * as Yup from 'yup'
+
+type TSendingStatus = 'idle' | 'sending'
 
 export const orderSchema = Yup.object({
   name: Yup.string().required('Name is required!'),
@@ -15,6 +17,8 @@ export const orderSchema = Yup.object({
 })
 
 export const ContactForm = () => {
+  const [sendingStatus, setSendingStatus] = useState<TSendingStatus>('idle')
+
   const { getFieldProps, errors, handleSubmit, touched } = useFormik({
     initialValues: {
       name: '',
@@ -23,9 +27,19 @@ export const ContactForm = () => {
       message: '',
     },
     validationSchema: orderSchema,
-    onSubmit: (values, formikHelpers) => {
-      alert(values)
+    onSubmit: async (values, formikHelpers) => {
+      setSendingStatus('sending')
+      await fetch(`${import.meta.env.VITE_BASE_URL}sendMessage`, {
+        method: 'POST',
+        headers: {
+          Accept: 'application.json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values),
+      })
+
       formikHelpers.resetForm()
+      setSendingStatus('idle')
     },
   })
 
@@ -65,7 +79,12 @@ export const ContactForm = () => {
           error={touched.message && errors.message}
         />
       </div>
-      <Button text={'send message'} onClick={() => {}} icon={faPaperPlane} />
+      <Button
+        type={'submit'}
+        text={'send message'}
+        icon={faPaperPlane}
+        loading={sendingStatus === 'sending'}
+      />
     </form>
   )
 }
