@@ -3,8 +3,12 @@ import s from './Home.module.scss'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons/faArrowRight'
 import { Button } from '../../common/components/Button/Button'
 import mainPhoto from '../../assets/images/main_photo.jpg'
+import { useNavigate } from 'react-router-dom'
+import { ROUTE_PATHS } from '../../constants/routePaths'
 
 export const Home = () => {
+  const navigate = useNavigate()
+
   return (
     <div className={s.home}>
       <img className={s.mainPhoto} src={mainPhoto} alt={'photo'} />
@@ -18,7 +22,11 @@ export const Home = () => {
           user-friendly interfaces. Check out my projects and feel free to get in touch if you're
           interested in collaborating or learning more about my skills and experience.
         </p>
-        <Button text={'More about me'} icon={faArrowRight} onClick={() => alert('sadf')} />
+        <Button
+          text={'More about me'}
+          icon={faArrowRight}
+          onClick={() => navigate(ROUTE_PATHS.ABOUT)}
+        />
       </div>
     </div>
   )
