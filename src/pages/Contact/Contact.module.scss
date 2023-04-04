@@ -37,6 +37,10 @@
   margin-bottom: 20px;
 }
 
+.contactItems {
+  margin-bottom: 20px;
+}
+
 .contactItem {
   display: flex;
   align-items: center;
@@ -52,6 +56,28 @@
   text-transform: uppercase;
 }
 
+.socialNetworks {
+  display: flex;
+  gap: 20px;
+}
 
+.socialNetwork {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  color: var(--nav-icon-color);
+  border-radius: 50%;
+  background-color: var(--nav-btn-color);
+  transition: var(--theme-transition);
+  cursor: pointer;
+
+  &:hover {
+    color: #ffffff;
+    background-color: var(--primary-color);
+  }
+}
 
 
