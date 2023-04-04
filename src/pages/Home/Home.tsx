@@ -13,9 +13,9 @@ export const Home = () => {
           <span>Front-end developer</span>
         </h1>
         <p className={s.description}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam asperiores
-          autem beatae consequatur dignissimos doloribus eius facere iure nisi, odio odit
-          perferendis porro praesentium quidem similique, sit suscipit, tempore.
+          Hi there! I'm a frontend React developer with a focus on creating dynamic and
+          user-friendly interfaces. Check out my projects and feel free to get in touch if you're
+          interested in collaborating or learning more about my skills and experience.
         </p>
         <Button text={'More about me'} icon={faArrowRight} onClick={() => alert('sadf')} />
       </div>

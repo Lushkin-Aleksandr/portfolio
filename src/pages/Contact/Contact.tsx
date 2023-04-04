@@ -17,10 +17,11 @@ export const Contact = () => {
         <PageTitle firstTextPart={'get in'} secondTextPart={'touch'} backgroundText={'contact'} />
         <div className={s.content}>
           <div className={s.info}>
-            <h3 className={s.infoTitle}>Don't be shy ! </h3>
+            <h3 className={s.infoTitle}>Thanks for checking out my portfolio!</h3>
             <p className={s.text}>
-              Feel free to get in touch with me. I am always open to discussing new projects,
-              creative ideas or opportunities to be part of your visions.{' '}
+              If you're interested in working together or have any questions, please don't hesitate
+              to get in touch. Simply fill out the contact form below or reach out to me directly
+              via email or social media. I look forward to connecting with you soon!
             </p>
             <div className={s.contactItems}>
               <div className={s.contactItem}>
