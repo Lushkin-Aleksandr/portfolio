@@ -2,11 +2,12 @@ import React from 'react'
 import s from './Home.module.scss'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons/faArrowRight'
 import { Button } from '../../common/components/Button/Button'
+import mainPhoto from '../../assets/images/main_photo.jpg'
 
 export const Home = () => {
   return (
     <div className={s.home}>
-      <img className={s.mainPhoto} alt={'photo'} />
+      <img className={s.mainPhoto} src={mainPhoto} alt={'photo'} />
       <div className={s.info}>
         <h1 className={s.title}>
           I'm Aleksandr Lushkin

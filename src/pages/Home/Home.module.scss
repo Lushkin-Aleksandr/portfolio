@@ -37,6 +37,7 @@
   width: 550px;
   height: calc(100vh - 80px);
   background-color: #000;
+  object-fit: cover;
   box-shadow: var(--photo-box-shadow);
   transition: box-shadow var(--theme-transition);
   margin-right: 20px;
