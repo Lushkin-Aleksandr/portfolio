@@ -11,6 +11,7 @@
   position: relative;
   transition: color var(--theme-transition);
   cursor: pointer;
+  z-index: 1; // for safari
 
   &:disabled {
     opacity: .5;
@@ -26,8 +27,8 @@
     bottom: 0;
     transform: translateX(100%);
     background-color: var(--primary-color);
-    transition: .3s ease;
     z-index: -1;
+    transition: .3s ease;
   }
 
   &:hover {
