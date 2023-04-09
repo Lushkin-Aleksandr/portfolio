@@ -21,7 +21,7 @@ const works = [
     img: todoImg,
     title: 'todo',
     technologies: 'React, Redux-Toolkit, Typescript, Material UI',
-    projectLink: '',
+    projectLink: 'https://sanyalu.github.io/todolist-incubator',
     repositoryLink: 'https://github.com/sanyalu/todolist-incubator',
   },
   {
