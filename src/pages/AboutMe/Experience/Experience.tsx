@@ -13,24 +13,20 @@ export const Experience = () => {
             jobTitle={'React developer'}
             jobPlace={'It-incubator'}
             description={
-              'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit'
+              'Building single-page applications using modern stack of technologies. (React, RTK, Redux-Saga, Material UI, SCSS, Storybook, Snapshot tests etc).'
             }
           />
           <ExperienceItem
             date={'2021'}
             jobTitle={'Advanced JavaScript'}
             jobPlace={'Udemy'}
-            description={
-              'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit'
-            }
+            description={'Theory and practice of JS (ES6)'}
           />
           <ExperienceItem
             date={'2020'}
             jobTitle={'Samuraj way'}
             jobPlace={'It-incubator'}
-            description={
-              'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit'
-            }
+            description={'Social network on React/Redux'}
           />
         </ul>
         <ul className={s.list}>
@@ -38,25 +34,19 @@ export const Experience = () => {
             date={'2021'}
             jobTitle={'Web development'}
             jobPlace={'html academy'}
-            description={
-              'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit'
-            }
+            description={'Learning HTML/CSS/JS for building adaptive and responsive layout'}
           />
           <ExperienceItem
             date={'2019 - 2022'}
             jobTitle={'It-support'}
             jobPlace={'LLC Esp'}
-            description={
-              'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit'
-            }
+            description={'Working with customers for, solving technical issues'}
           />
           <ExperienceItem
             date={'2015 - 2019'}
             jobTitle={'bachelor degree of information technologies'}
             jobPlace={'nngasu'}
-            description={
-              'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit'
-            }
+            description={'Computer science learning, basic development'}
           />
         </ul>
       </div>
