@@ -28,7 +28,7 @@ const works = [
     img: cartImg,
     title: 'cart',
     technologies: 'React, Redux-Toolkit, Typescript, Styled-Components, Firebase',
-    projectLink: '',
+    projectLink: 'https://cart-sanyalu.vercel.app/',
     repositoryLink: 'https://github.com/sanyalu/cart',
   },
   {
